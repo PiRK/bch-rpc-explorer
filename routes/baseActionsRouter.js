@@ -506,7 +506,7 @@ router.get("/address/:address", function (req, res, next) {
 			//res.locals.pageErrors.push(utils.logError("u02qg02yqge", err));
 			try {
 				var saneAddress = "empty";
-				var prefix = global.activeBlockchain == "main" ? "bitcoincash:" : "bchtest:";
+				var prefix = global.activeBlockchain == "main" ? "ecash:" : "ectest:";
 				if (!address.includes(prefix)) {
 					saneAddress = prefix.concat(address);
 				} else {

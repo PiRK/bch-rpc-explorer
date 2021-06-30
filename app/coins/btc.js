@@ -4,30 +4,16 @@ Decimal8 = Decimal.clone({ precision:8, rounding:8 });
 var currencyUnits = [
 	{
 		type:"native",
-		name:"BCHA",
+		name:"XEC",
 		multiplier:1,
 		default:true,
-		values:["", "bcha", "BCHA"],
-		decimalPlaces:8
-	},
-	{
-		type:"native",
-		name:"mBCHA",
-		multiplier:1000,
-		values:["mbcha"],
-		decimalPlaces:5
-	},
-	{
-		type:"native",
-		name:"bits",
-		multiplier:1000000,
-		values:["bits"],
+		values:["", "eCash", "XEC"],
 		decimalPlaces:2
 	},
 	{
 		type:"native",
 		name:"sat",
-		multiplier:100000000,
+		multiplier:100,
 		values:["sat", "satoshi"],
 		decimalPlaces:0
 	},
@@ -50,9 +36,9 @@ var currencyUnits = [
 ];
 
 module.exports = {
-	name:"Bitcoin Cash",
-	ticker:"BCHA",
-	logoUrl:"/img/logo/bch.svg",
+	name:"eCash",
+	ticker:"XEC",
+	logoUrl:"/img/logo/xec.svg",
 	maxBlockSize: 32000000,
 	difficultyAdjustmentBlockOffset: 1008,
 	difficultyAdjustmentBlockCount: 4,
@@ -64,8 +50,8 @@ module.exports = {
 	targetBlockTimeSeconds: 600,
 	targetBlockTimeMinutes: 10,
 	currencyUnits:currencyUnits,
-	currencyUnitsByName:{"BCHA":currencyUnits[0], "mBCHA":currencyUnits[1], "bits":currencyUnits[2], "sat":currencyUnits[3]},
-	baseCurrencyUnit:currencyUnits[3],
+	currencyUnitsByName:{"XEC":currencyUnits[0], "sat":currencyUnits[1]},
+	baseCurrencyUnit:currencyUnits[1],
 	defaultCurrencyUnit:currencyUnits[0],
 	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
 	genesisBlockHashesByNetwork:{

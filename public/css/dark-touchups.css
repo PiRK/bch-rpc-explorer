@@ -40,10 +40,10 @@ hr {
 }
 
 a {
-	color: #F59332
+	color: #00ABE7
 }
 a:hover {
-    color: #F59332;
+    color: #00ABE7;
     text-decoration: underline;
 }
 
@@ -54,31 +54,31 @@ a:hover {
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #F59332;
-    border-color: #F59332;
+    background-color: #00ABE7;
+    border-color: #00ABE7;
 }
 .btn-primary.focus,
 .btn-primary:focus {
     color: #fff;
-    background-color: #F59332;
-    border-color: #F59332;
+    background-color: #00ABE7;
+    border-color: #00ABE7;
     box-shadow: 0 0 0 0.2rem rgba(113, 179, 251, 0.5);
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #f2f3f4;
-    background-color: #F59332;
-    border-color: #F59332;
+    background-color: #00ABE7;
+    border-color: #00ABE7;
 }
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #F59332;
-    border-color: #F59332;
+    background-color: #00ABE7;
+    border-color: #00ABE7;
 }
 .navbar-dark .navbar-text a {
-    color: #F59332;
+    color: #00ABE7;
 }
 .page-link {
     position: relative;
@@ -100,7 +100,7 @@ a:hover {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #F59332;
+    background-color: #00ABE7;
     border-color: #4D4D4D;
 }
 .page-item.disabled .page-link {
